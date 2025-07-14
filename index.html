@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Pablo Javier Agu - Especialista en columna vertebral en Tucumán, Argentina. Tratamientos avanzados para hernias discales, escoliosis y dolor de espalda.">
+  <meta name="keywords" content="traumatólogo, columna vertebral, especialista columna, hernia discal, escoliosis, dolor espalda, cirugía columna, Tucumán, Argentina">
+  <title>Dr. Pablo Javier Agu | Especialista en Columna Vertebral | Tucumán</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .underline-title {
+      position: relative;
+      display: inline-block;
+    }
+    .underline-title:after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 4px;
+      bottom: -10px;
+      left: 0;
+      background-color: #2563eb;
+    }
+    .treatment-card:hover {
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial-card {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .carousel-item {
+      display: none;
+      transition: opacity 0.5s ease;
+    }
+    .carousel-item.active {
+      display: block;
+    }
+    .cta-section {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Dr. Pablo Javier Agu",
+  "description": "Especialista en columna vertebral en Tucumán. Tratamientos de hernias discales, escoliosis, rizólisis y cirugía de columna.",
+  "url": "https://www.drpabloagu.com",
+  "image": "https://www.drpabloagu.com/imagen-principal.jpg",
+  "telephone": "+54 381 123-4567",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Santiago del Estero 158",
+    "addressLocality": "San Miguel de Tucumán",
+    "addressRegion": "Tucumán",
+    "postalCode": "T4000",
+    "addressCountry": "AR"
+  },
+  "openingHours": "Mo-Fr 08:00-20:00",
+  "priceRange": "$$",
+  "medicalSpecialty": "Orthopedic",
+  "founder": {
+    "@type": "Physician",
+    "name": "Dr. Pablo Javier Agu",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Universidad Nacional de Tucumán"
+    }
+  }
+}
+</script>
+
+</head>
+<body class="bg-gray-50">
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <!-- Encabezado mejorado sigue en el próximo bloque -->
+  <header class="fixed w-full z-50 bg-white shadow-md" role="banner">
+  <div class="container mx-auto px-4 lg:px-6 py-4">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7776120c-621a-4469-af48-90c0a8520c47.png" alt="Logo del Dr. Pablo Agu" class="h-12 mr-3" />
+        <div>
+          <h1 class="text-xl font-bold text-gray-800">Dr. Pablo J. Agu</h1>
+          <p class="text-sm text-blue-600">Especialista en Columna Vertebral</p>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+        <a href="#inicio" class="text-blue-600 font-medium hover:text-blue-800 transition">Inicio</a>
+        <a href="#especialidades" class="text-gray-600 font-medium hover:text-blue-600 transition">Especialidades</a>
+        <a href="#sobre-mi" class="text-gray-600 font-medium hover:text-blue-600 transition">Sobre Mí</a>
+		<a href="#tratamientos" class="text-gray-600 font-medium hover:text-blue-600 transition">Tratamientos</a>
+        
+        <a href="#testimonios" class="text-gray-600 font-medium hover:text-blue-600 transition">Pacientes</a>
+		<a href="#faq" class="text-gray-600 font-medium hover:text-blue-600 transition">Preguntas</a>
+
+        <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition">Contacto</a>
+      </nav>
+
+      <button id="mobileMenuButton"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+        class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden transition-all duration-300 mt-4" role="navigation">
+      <div class="flex flex-col space-y-3 bg-white rounded-lg p-4 border border-gray-200 shadow">
+        <a href="#inicio" class="block py-2 px-4 text-gray-700 hover:bg-blue-50 rounded-lg transition">Inicio</a>
+        <a href="#especialidades" class="block py-2 px-4 text-gray-700 hover:bg-blue-50 rounded-lg transition">Especialidades</a>
+        <a href="#tratamientos" class="block py-2 px-4 text-gray-700 hover:bg-blue-50 rounded-lg transition">Tratamientos</a>
+        <a href="#sobre-mi" class="block py-2 px-4 text-gray-700 hover:bg-blue-50 rounded-lg transition">Sobre Mí</a>
+        <a href="#testimonios" class="block py-2 px-4 text-gray-700 hover:bg-blue-50 rounded-lg transition">Pacientes</a>
+		<a href="#faq" class="block py-2 px-4 text-gray-700 hover:bg-blue-50 rounded-lg transition">Preguntas Frecuentes</a>
+
+        <a href="#contacto" class="block py-2 px-4 bg-blue-600 text-white rounded-lg font-medium text-center">Contacto</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section id="inicio" class="relative flex items-center pt-24 min-h-screen bg-gray-900" role="region" aria-labelledby="hero-title">
+    
+    <!-- Fondo con imagen -->
+    <div class="absolute inset-0 z-[-1]" aria-hidden="true"
+         style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('agu2.png') center/cover no-repeat;">
+    </div>
+
+    <div class="container mx-auto px-4 lg:px-6">
+      <div class="max-w-3xl mx-auto text-center text-white">
+        <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Dr. Pablo Javier Agu</h1>
+        <h2 class="text-2xl md:text-3xl text-blue-300 font-bold mb-8">Especialista en Columna Vertebral</h2>
+        <p class="text-xl text-gray-200 mb-10 leading-relaxed">
+          Más de 15 años de experiencia en diagnóstico y tratamiento avanzado de patologías de la columna vertebral en Tucumán, Argentina.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 flex items-center justify-center"
+             aria-label="Solicitar turno con el Dr. Pablo Javier Agu">
+            <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i> Solicitar Turno
+          </a>
+          <a href="tel:+543811234567" class="bg-white hover:bg-gray-100 text-blue-700 font-bold py-3 px-8 rounded-full text-lg transition duration-300 flex items-center justify-center"
+             aria-label="Llamar al consultorio del Dr. Pablo Javier Agu">
+            <i class="fas fa-phone-alt mr-2" aria-hidden="true"></i> Llamar Ahora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<section class="py-20 bg-white" id="servicios" role="region" aria-labelledby="servicios-titulo">
+  <div class="container mx-auto px-4 lg:px-6">
+    <div class="text-center mb-16">
+      <h2 id="servicios-titulo" class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+        Servicios <span class="underline-title">Destacados</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Atención integral con la última tecnología en diagnóstico y tratamiento.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <article class="bg-gray-50 p-8 rounded-xl border border-gray-200 text-center hover:shadow-lg transition">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <i class="fas fa-bone text-blue-600 text-2xl" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Traumatología Avanzada</h3>
+        <p class="text-gray-600">Solución integral a problemas óseos y musculares con los últimos avances médicos.</p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="bg-gray-50 p-8 rounded-xl border border-gray-200 text-center hover:shadow-lg transition">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <i class="fas fa-procedures text-blue-600 text-2xl" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Cirugía Mínimamente Invasiva</h3>
+        <p class="text-gray-600">Técnicas quirúrgicas modernas para una recuperación más rápida y menos dolorosa.</p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="bg-gray-50 p-8 rounded-xl border border-gray-200 text-center hover:shadow-lg transition">
+        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <i class="fas fa-x-ray text-blue-600 text-2xl" aria-hidden="true"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Diagnóstico por Imágenes</h3>
+        <p class="text-gray-600">Equipamiento de última generación para un diagnóstico preciso y temprano.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="especialidades" class="py-20 bg-gray-50" role="region" aria-labelledby="especialidades-titulo">
+  <div class="container mx-auto px-4 lg:px-6">
+    <div class="text-center mb-16">
+      <h2 id="especialidades-titulo" class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+        Nuestras <span class="underline-title">Especialidades</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Tratamientos personalizados para cada condición de la columna vertebral.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Tarjeta 1 -->
+      <article class="bg-white rounded-xl overflow-hidden shadow-lg treatment-card">
+        <img src="URL_HERNIA_DISCAL.jpg" alt="Imagen representativa de hernias discales" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Hernias Discales</h3>
+          <p class="text-gray-600 mb-4">Tratamiento de protrusiones y hernias discales con abordajes conservadores y quirúrgicos.</p>
+          <ul class="space-y-2 text-left">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Microdiscectomía</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Infiltraciones guiadas</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Rehabilitación especializada</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="bg-white rounded-xl overflow-hidden shadow-lg treatment-card">
+        <img src="URL_ESCOLOSIS.jpg" alt="Imagen representativa del tratamiento de escoliosis" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Escoliosis</h3>
+          <p class="text-gray-600 mb-4">Manejo integral de curvas anormales de la columna vertebral en todas las edades.</p>
+          <ul class="space-y-2 text-left">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Corsés personalizados</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Fisioterapia específica</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Corrección quirúrgica</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="bg-white rounded-xl overflow-hidden shadow-lg treatment-card">
+        <img src="URL_FRACTURAS.jpg" alt="Imagen representativa de fracturas vertebrales" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Fracturas Vertebrales</h3>
+          <p class="text-gray-600 mb-4">Manejo de fracturas por trauma, osteoporosis o condiciones degenerativas.</p>
+          <ul class="space-y-2 text-left">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Vertebroplastia</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Cifoplastia con balón</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-2" aria-hidden="true"></i>
+              <span class="text-gray-700">Tratamiento conservador</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="#contacto" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+         aria-label="Consultar todas las especialidades disponibles">
+        Consultar todas las especialidades
+        <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="sobre-mi" class="py-20 bg-white" role="region" aria-labelledby="titulo-sobre-mi">
+  <div class="container mx-auto px-4 lg:px-6">
+    <div class="flex flex-col lg:flex-row items-center gap-10">
+      
+      <!-- Imagen del doctor -->
+      <div class="lg:w-1/2">
+        <img src="URL_FOTO_DOCTOR.jpg" alt="Foto del Dr. Pablo Javier Agu en su consultorio" class="rounded-xl shadow-xl w-full h-auto object-cover" />
+      </div>
+
+      <!-- Texto del perfil -->
+      <div class="lg:w-1/2">
+        <h2 id="titulo-sobre-mi" class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Dr. Pablo Javier Agu</h2>
+        <h3 class="text-xl text-blue-600 font-semibold mb-6">Especialista en Patologías de la Columna Vertebral</h3>
+
+        <div class="text-gray-600 space-y-4 mb-8 leading-relaxed">
+          <p>
+            El Dr. Pablo Javier Agu es médico egresado con honores de la Universidad Nacional de Tucumán, con especialización en Ortopedia y Traumatología, y subespecialización en Cirugía de Columna Vertebral.
+          </p>
+          <p>
+            Cuenta con una vasta experiencia en el diagnóstico y tratamiento de patologías complejas de la columna, habiendo realizado numerosos cursos de perfeccionamiento en Argentina y el exterior.
+          </p>
+        </div>
+
+        <div class="mb-8">
+          <h4 class="text-lg font-semibold text-gray-800 mb-3">Experiencia Profesional</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-600 mt-1 mr-3" aria-hidden="true"></i>
+              <span>Jefe del Servicio de Columna Vertebral en Hospital Central de Tucumán (2015-presente)</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-600 mt-1 mr-3" aria-hidden="true"></i>
+              <span>Docente de Postgrado en Cirugía de Columna - Universidad Nacional de Tucumán</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-600 mt-1 mr-3" aria-hidden="true"></i>
+              <span>Más de 1.000 procedimientos quirúrgicos realizados</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <div class="flex items-center bg-gray-100 px-4 py-2 rounded-lg">
+            <i class="fas fa-graduation-cap text-blue-600 mr-2" aria-hidden="true"></i>
+            <span class="text-gray-700">U.N.T. - Medicina</span>
+          </div>
+          <div class="flex items-center bg-gray-100 px-4 py-2 rounded-lg">
+            <i class="fas fa-user-md text-blue-600 mr-2" aria-hidden="true"></i>
+            <span class="text-gray-700">Especialista en Ortopedia</span>
+          </div>
+          <div class="flex items-center bg-gray-100 px-4 py-2 rounded-lg">
+            <i class="fas fa-certificate text-blue-600 mr-2" aria-hidden="true"></i>
+            <span class="text-gray-700">Subespecialista en Columna</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-16 bg-blue-600 text-white" role="region" aria-labelledby="stats-titulo">
+  <div class="container mx-auto px-4 lg:px-6">
+    <h2 id="stats-titulo" class="sr-only">Estadísticas destacadas del Dr. Agu</h2>
+    
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div>
+        <h3 class="text-4xl font-bold mb-2">1,500+</h3>
+        <p class="text-blue-100">Pacientes atendidos</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold mb-2">20+</h3>
+        <p class="text-blue-100">Años de experiencia</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold mb-2">98<span class="text-2xl">%</span></h3>
+        <p class="text-blue-100">Satisfacción pacientes</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold mb-2">500+</h3>
+        <p class="text-blue-100">Cirugías realizadas</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="tratamientos" class="py-20 bg-gray-50" role="region" aria-labelledby="titulo-tratamientos">
+  <div class="container mx-auto px-4 lg:px-6">
+    <div class="text-center mb-16">
+      <h2 id="titulo-tratamientos" class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+        Nuestros <span class="underline-title">Tratamientos</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Técnicas modernas y efectivas para el manejo del dolor y recuperación funcional.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Tratamiento 1 -->
+      <article class="bg-white rounded-xl p-8 shadow-lg">
+        <div class="flex items-start mb-6">
+          <div class="bg-blue-100 p-3 rounded-lg mr-5">
+            <i class="fas fa-procedures text-blue-600 text-2xl" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Cirugías de Columna</h3>
+            <p class="text-gray-600">Procedimientos quirúrgicos de última generación con mínimo traumatismo.</p>
+          </div>
+        </div>
+        <ul class="ml-16 space-y-4 text-left">
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3" aria-hidden="true"></i>
+            <div>
+              <h4 class="font-medium text-gray-800">Microdiscectomía lumbar y cervical</h4>
+              <p class="text-gray-600 text-sm">Extracción de hernias discales con técnicas mínimamente invasivas.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3" aria-hidden="true"></i>
+            <div>
+              <h4 class="font-medium text-gray-800">Estabilización dinámica intersomática</h4>
+              <p class="text-gray-600 text-sm">Fusión vertebral que preserva el movimiento.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3" aria-hidden="true"></i>
+            <div>
+              <h4 class="font-medium text-gray-800">Artrodesis vertebral</h4>
+              <p class="text-gray-600 text-sm">Fijación de vértebras en casos de inestabilidad severa.</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Tratamiento 2 -->
+      <article class="bg-white rounded-xl p-8 shadow-lg">
+        <div class="flex items-start mb-6">
+          <div class="bg-blue-100 p-3 rounded-lg mr-5">
+            <i class="fas fa-syringe text-blue-600 text-2xl" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Tratamientos Percutáneos</h3>
+            <p class="text-gray-600">Procedimientos ambulatorios con rápido alivio del dolor.</p>
+          </div>
+        </div>
+        <ul class="ml-16 space-y-4 text-left">
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3" aria-hidden="true"></i>
+            <div>
+              <h4 class="font-medium text-gray-800">Infiltraciones epidurales</h4>
+              <p class="text-gray-600 text-sm">Guiadas por fluoroscopia para máxima precisión.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3" aria-hidden="true"></i>
+            <div>
+              <h4 class="font-medium text-gray-800">Bloqueos facetarios</h4>
+              <p class="text-gray-600 text-sm">Para diagnóstico y alivio del dolor facetario.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-check-circle text-green-500 mt-1 mr-3" aria-hidden="true"></i>
+            <div>
+              <h4 class="font-medium text-gray-800">Rizólisis por radiofrecuencia</h4>
+              <p class="text-gray-600 text-sm">Tratamiento prolongado para dolor por artrosis.</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="#contacto" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+         aria-label="Solicitar evaluación personalizada">
+        Solicitar evaluación personalizada
+        <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="testimonios" class="py-20 bg-white" role="region" aria-labelledby="titulo-testimonios">
+  <div class="container mx-auto px-4 lg:px-6">
+    <div class="text-center mb-16">
+      <h2 id="titulo-testimonios" class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+        Lo que dicen <span class="underline-title">nuestros pacientes</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Opiniones reales de personas que confiaron su salud al Dr. Agu.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Testimonio 1 -->
+      <article class="bg-gray-50 p-6 rounded-xl shadow testimonial-card" aria-labelledby="testimonio-1-nombre">
+        <div class="flex items-center mb-4">
+          <img src="PACIENTE1.jpg" alt="Foto de paciente" class="w-12 h-12 rounded-full mr-4 object-cover" />
+          <div>
+            <h3 id="testimonio-1-nombre" class="font-bold text-gray-800">María Rosa C.</h3>
+            <p class="text-sm text-gray-500">Paciente operada de hernia discal</p>
+          </div>
+        </div>
+        <div class="flex mb-3 text-yellow-400" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <blockquote class="italic text-gray-700 mb-4 text-sm leading-relaxed">
+          “Solo puedo tener las mejores palabras para el Dr. Agu. Operó a mi papá de una hernia de disco, fue todo tal como nos explicó. No confiaría en otro especialista en columna.”
+        </blockquote>
+        <div class="text-xs text-gray-500 flex items-center">
+          <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i> Junio 2020
+        </div>
+      </article>
+
+      <!-- Testimonio 2 -->
+      <article class="bg-gray-50 p-6 rounded-xl shadow testimonial-card" aria-labelledby="testimonio-2-nombre">
+        <div class="flex items-center mb-4">
+          <img src="PACIENTE2.jpg" alt="Paciente sonriente" class="w-12 h-12 rounded-full mr-4 object-cover" />
+          <div>
+            <h3 id="testimonio-2-nombre" class="font-bold text-gray-800">Maximiliano Cano</h3>
+            <p class="text-sm text-gray-500">Cervical</p>
+          </div>
+        </div>
+        <div class="flex mb-3 text-yellow-400" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <blockquote class="italic text-gray-700 mb-4 text-sm leading-relaxed">
+          “Exelente profesional el y todo su equipo de primer nivel. Le realizó una cirugía de columna a mi padre en la zona cervical la cual salió muy bien. Si buscan un especialista en columna vayan ahí que es garantía.”
+        </blockquote>
+        <div class="text-xs text-gray-500 flex items-center">
+          <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i> Mayo 2025
+        </div>
+      </article>
+
+      <!-- Testimonio 3 -->
+      <article class="bg-gray-50 p-6 rounded-xl shadow testimonial-card" aria-labelledby="testimonio-3-nombre">
+        <div class="flex items-center mb-4">
+          <img src="PACIENTE3.jpg" alt="Paciente femenina anónima" class="w-12 h-12 rounded-full mr-4 object-cover" />
+          <div>
+            <h3 id="testimonio-3-nombre" class="font-bold text-gray-800">Ninfa N.</h3>
+            <p class="text-sm text-gray-500"></p>
+          </div>
+        </div>
+        <div class="flex mb-3 text-yellow-400" aria-hidden="true">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <blockquote class="italic text-gray-700 mb-4 text-sm leading-relaxed">
+          “Excelente Profesional. Mejor Ser Humano!”
+        </blockquote>
+        <div class="text-xs text-gray-500 flex items-center">
+          <i class="fas fa-calendar-alt mr-2" aria-hidden="true"></i> Octubre 2022
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="faq" class="py-16 px-4 bg-gray-100" role="region" aria-labelledby="titulo-faq">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 id="titulo-faq" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
+        Preguntas <span class="underline-title">Frecuentes</span>
+      </h2>
+      <p class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto">
+        Respondemos las dudas más comunes sobre tratamientos, turnos y atención médica.
+      </p>
+    </div>
+
+    <div class="space-y-5">
+      <!-- Pregunta 1 -->
+      <details class="bg-white rounded-lg shadow-sm p-5 group">
+        <summary class="cursor-pointer text-base sm:text-lg font-semibold text-blue-700 flex justify-between items-center">
+          ¿Qué especialidades atiende el Dr. Agu?
+          <span class="text-blue-500 transform group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+        </summary>
+        <p class="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed">
+          El Dr. Agu se especializa exclusivamente en patologías de la columna vertebral, incluyendo hernias discales, escoliosis, fracturas vertebrales, y dolor lumbar crónico.
+        </p>
+      </details>
+
+      <!-- Pregunta 2 -->
+      <details class="bg-white rounded-lg shadow-sm p-5 group">
+        <summary class="cursor-pointer text-base sm:text-lg font-semibold text-blue-700 flex justify-between items-center">
+          ¿Necesito estudios previos para la primera consulta?
+          <span class="text-blue-500 transform group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+        </summary>
+        <p class="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed">
+          Si ya contás con resonancia magnética, radiografías o tomografía, es útil llevarlas. De lo contrario, el Dr. te indicará los estudios necesarios según tu caso.
+        </p>
+      </details>
+
+      <!-- Pregunta 3 -->
+      <details class="bg-white rounded-lg shadow-sm p-5 group">
+        <summary class="cursor-pointer text-base sm:text-lg font-semibold text-blue-700 flex justify-between items-center">
+          ¿Hace cirugías mínimamente invasivas?
+          <span class="text-blue-500 transform group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+        </summary>
+        <p class="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed">
+          Sí. Siempre que el caso lo permita, se opta por técnicas mínimamente invasivas como microdiscectomía o rizólisis, para reducir dolor postoperatorio y acelerar la recuperación.
+        </p>
+      </details>
+
+      <!-- Pregunta 4 -->
+      <details class="bg-white rounded-lg shadow-sm p-5 group">
+        <summary class="cursor-pointer text-base sm:text-lg font-semibold text-blue-700 flex justify-between items-center">
+          ¿Cómo saco un turno?
+          <span class="text-blue-500 transform group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+        </summary>
+        <p class="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed">
+          Podés comunicarte por WhatsApp, teléfono o completar el formulario de contacto. Respondemos en el día hábil.
+        </p>
+      </details>
+
+      <!-- Pregunta 5 -->
+      <details class="bg-white rounded-lg shadow-sm p-5 group">
+        <summary class="cursor-pointer text-base sm:text-lg font-semibold text-blue-700 flex justify-between items-center">
+          ¿Dónde atiende el Dr. Agu?
+          <span class="text-blue-500 transform group-open:rotate-180 transition-transform"><i class="fas fa-chevron-down"></i></span>
+        </summary>
+        <p class="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed">
+          El consultorio se encuentra en Av. Santiago del Estero 158, San Miguel de Tucumán. Encontrás un mapa al final de esta página.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+<section id="contacto" class="py-20 bg-white" role="region" aria-labelledby="titulo-contacto">
+  <div class="container mx-auto px-4 lg:px-6">
+    <div class="flex flex-col lg:flex-row gap-12">
+      
+      <!-- Información de contacto -->
+      <div class="lg:w-1/2 space-y-8">
+        <div>
+          <h2 id="titulo-contacto" class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Contacto</h2>
+          <p class="text-lg text-gray-600">Podés agendar una consulta o comunicarte directamente con nuestro consultorio.</p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <i class="fas fa-map-marker-alt text-blue-600" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Dirección</h4>
+              <p class="text-gray-600"> Av.Santiago del Estero 158, San Miguel de Tucumán, Tucumán, Argentina</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <i class="fas fa-phone-alt text-blue-600" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Teléfono</h4>
+              <p class="text-gray-600">+54 381 123-4567</p>
+              <p class="text-gray-600 text-sm">Lunes a Viernes, 8:00 a 20:00 hs</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <i class="fas fa-envelope text-blue-600" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Email</h4>
+              <p class="text-gray-600">consultas@drpabloagu.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+              <i class="fab fa-whatsapp text-green-600" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">WhatsApp</h4>
+              <p class="text-gray-600">+54 381 123-4567</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Redes Sociales</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-600 hover:text-white transition" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-600 hover:text-white transition" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="bg-blue-100 text-blue-600 p-3 rounded-full hover:bg-blue-600 hover:text-white transition" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="lg:w-1/2">
+        <div class="bg-white border border-gray-200 rounded-xl shadow-lg p-8">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">Solicitar Consulta</h3>
+          <form id="contactForm">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo *</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono *</label>
+                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="preferred_contact" class="block text-sm font-medium text-gray-700 mb-1">Prefiero ser contactado por:</label>
+                <select id="preferred_contact" name="preferred_contact" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                  <option value="phone">Llamada</option>
+                  <option value="whatsapp">WhatsApp</option>
+                  <option value="email">Email</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje (opcional)</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+
+            <div class="mt-6 flex items-start">
+              <input type="checkbox" id="privacy" name="privacy" required class="mt-1 text-blue-600 border-gray-300 rounded">
+              <label for="privacy" class="ml-2 text-sm text-gray-700">
+                Acepto la <a href="#" class="text-blue-600 hover:underline">Política de Privacidad</a>.
+              </label>
+            </div>
+
+            <button type="submit" class="mt-8 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition">
+              Enviar solicitud
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Mapa exacto - Santiago del Estero 158 -->
+<!-- Mapa con dirección exacta - versión más grande -->
+<div style="max-width: 500px; margin: 0 auto; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 10px 15px rgba(0,0,0,0.1);">
+  <iframe
+    src="https://www.google.com/maps?q=Santiago+del+Estero+158,+San+Miguel+de+Tucumán,+Tucumán,+Argentina&output=embed"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Ubicación exacta del consultorio del Dr. Agu"
+    aria-label="Mapa: Santiago del Estero 158, San Miguel de Tucumán"
+  ></iframe>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10 mt-20">
+  <div class="container mx-auto px-4 text-center">
+    <h4 class="text-xl font-semibold mb-2">Dr. Pablo Javier Agu</h4>
+    <p class="text-gray-400 mb-4">Especialista en Columna Vertebral | San Miguel de Tucumán</p>
+    
+    <div class="flex justify-center space-x-4 mb-6">
+      <a href="#" aria-label="Facebook" class="text-white hover:text-blue-500 transition">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" aria-label="Instagram" class="text-white hover:text-pink-400 transition">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="text-white hover:text-blue-300 transition">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <p class="text-sm text-gray-500">&copy; 2025 Dr. Pablo Javier Agu. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a
+  href="https://wa.me/543811234567"
+  target="_blank"
+  aria-label="Enviar mensaje por WhatsApp"
+  style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    text-decoration: none;
+  ">
+  <i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i>
+</a>
+<script>
+  const menuBtn = document.getElementById('mobileMenuButton');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+    menuBtn.setAttribute('aria-expanded', !isExpanded);
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Cierra el menú cuando se hace clic en cualquier link del menú móvil
+  document.querySelectorAll('#mobileMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', false);
+    });
+  });
+</script>
+
+</body>
+</html>
+
